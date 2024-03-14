@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """ This is a complex types Module"""
+from typing import List
 
 
 def sum_list(input_list: list[float]) -> float:
@@ -7,4 +8,4 @@ def sum_list(input_list: list[float]) -> float:
     @input_list: The list of floats to be summed
     Return: Returns the sum of lists
     """
-    return sum(input_list)
+    return float(sum(input_list))
