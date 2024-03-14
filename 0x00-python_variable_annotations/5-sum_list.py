@@ -3,7 +3,8 @@
 
 
 def sum_list(input_list: list[float]) -> float:
-    sum = 0
-    for x in input_list:
-        sum += x
-    return sum
+    """ a sum of list function
+    @input_list: The list of floats to be summed
+    Return: Returns the sum of lists
+    """
+    return sum(input_list)
