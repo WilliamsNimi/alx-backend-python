@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+""" This is a complex types Module"""
+from typing import Tuple, Union
+
+
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
+    return (k, v**2)

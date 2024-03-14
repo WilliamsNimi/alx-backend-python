@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+""" This is a complex types Module"""
+from typing import Iterable, Sequence, Tuple, List
+
+
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
+    """
+    This is an Iterable type
+    @lst: list of Iterables
+    Return: List of tuples from the list
+    """
+    return [(i, len(i)) for i in lst]

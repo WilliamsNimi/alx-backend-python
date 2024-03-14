@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+""" This is a complex types Module"""
+def sum_list(input_list: list[float]) -> float:
+    sum = 0
+    for x in input_list:
+        sum += x
+    return sum
