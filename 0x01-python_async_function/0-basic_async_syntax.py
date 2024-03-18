@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """ This is an async await module"""
+
+
 import asyncio
 import random
 
 
-async def wait_random(max_delay: int = 10):
+async def wait_random(max_delay: int = 10) -> float:
     """ This function simulates async
     @max_delay: Takes a random integer with an inital value of 10
     Return: Returns a random floating point number between 0 and max_delay
