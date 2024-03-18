@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+""" Async tasks"""
+
+
+import asyncio
+
+
+wait_random = __import__('0-basic_async_syntax').wait_random
+
+def task_wait_random(max_delay: int) -> asyncio.Task:
+    """ This function explores task wait time#!/usr/bin/env python3
+    @max_delay: integer meant as parameter for the async calls
+    Return: Returns time per call
+    """
+    return (asyncio.create_task(wait_random(max_delay)))
