@@ -2,9 +2,10 @@
 """ This is an async random number generator """
 import asyncio
 import random
+from typing import Generator
 
 
-async def async_generator():
+async def async_generator() -> Generator[float, None, None]:
     """ This is an async random number generator function
     Return: Generates a list of random numbers
     """
