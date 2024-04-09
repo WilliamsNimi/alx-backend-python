@@ -17,7 +17,7 @@ class TestAccessNestedMap(unittest.TestCase):
         """ The access_nested_map test function"""
         self.assertEqual(access_nested_map(map_dict, path), result)
 
-    @parameterized.expand([({}, {"a", }).
+    @parameterized.expand([({}, {"a", }),
                            ({"a": 1}, {"a", "b"})])
     def test_access_nested_map_exception(self, map_dict: Mapping,
                                          path: Sequence):
@@ -32,7 +32,7 @@ class TestGetJson(unittest.TestCase):
                            ("http://holberton.io", {"payload": False})])
     def test_get_json(self, url: str, payload: Dict):
         """ The get json test method """
-        with patch("requests.get", mock_value=Mock(''{
+        with patch("requests.get", mock_value=Mock('',{
                 'json.return_value': payload})) as request_obj:
             response = get_json(url)
             self.assertEqual(response, payload)
